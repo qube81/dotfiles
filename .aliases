@@ -1,0 +1,40 @@
+# my aliases
+
+alias ~="cd ~"
+alias ..="cd .."
+
+
+alias e="echo"
+
+alias ll="ls -lhp"
+alias la="ls -a"
+
+# List only directories
+alias ld='ll | grep "^d"'
+
+
+alias grep="grep --color=auto"
+
+alias firefox="open -a Firefox"
+alias safari="open -a Safari"
+alias chrome="open -a Google\ Chrome"
+alias vi="vim"
+
+alias rm='rmtrash'
+alias cp='cp -i'
+alias mv='mv -i'
+alias diff='colordiff -u'
+alias pwd='pwd -P'
+alias cot='open $1 -a /Applications/CotEditor.app'
+
+# apachectl always require sudo
+alias apachectl='sudo apachectl'
+
+# IP address
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+
+# generate password (installed via homebrew) 
+alias pwgen="pwgen -1"
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"

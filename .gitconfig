@@ -7,7 +7,6 @@
 [color]
 	ui = auto
 [core]
-	excludesfile = /Users/ytakahashi/git-etc/.gitignore
 	quotepath = false
 	editor = vim
 	pager = less -r

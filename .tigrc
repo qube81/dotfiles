@@ -1,0 +1,7 @@
+set diff-options = -m --first-parent
+set main-view = id author commit-title:graph=yes,refs=yes
+set line-graphics = ascii
+set blame-view = date:default author:full file-name:auto id:yes,color line-number:yes,interval=5 text
+
+bind main G !@hub browse -- commit/%(commit)
+bind diff G !@hub browse -- commit/%(commit)

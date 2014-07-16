@@ -13,6 +13,10 @@ unset file
 if [ -f $(brew --prefix)/etc/bash_completion.d/git-completion.bash ]; then
     source $(brew --prefix)/etc/bash_completion.d/git-completion.bash
 fi
+if [ -f $(brew --prefix)/etc/bash_completion.d/git-prompt.sh ]; then
+  source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
+fi
+
 
 # brew install bash-completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then

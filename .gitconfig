@@ -7,16 +7,18 @@
 [color]
 	ui = auto
 [core]
+	excludesfile = ~/git-etc/.gitignore
 	quotepath = false
 	editor = vim
 	pager = less -r
 	precomposeunicode = true
 [alias]
-	ad = add -A
+	ad = add -A .
 	co = checkout
 	ci = commit
 	st = status --short --branch
-	br = branch -v -v
+    br = branch -v -v
+    re = remote -v
 	lo = log --decorate --abbrev-commit --date=short --oneline
 	mnff = merge --no-ff
 		
@@ -25,11 +27,13 @@
 		
 	ds = diff --staged
 	dw = diff -w
-	dn = diff --stat
-		dna = diff --stat --diff-filter=A
-		dnm = diff --stat --diff-filter=M
-		dnd = diff --stat --diff-filter=D
-			dnam = diff --stat --diff-filter=AM
+	dword = diff --word-diff
+    
+    dn = diff --stat=120
+        dna = diff --stat --diff-filter=A --stat=120
+        dnm = diff --stat --diff-filter=M --stat=120
+        dnd = diff --stat --diff-filter=D --stat=120
+            dnam = diff --stat --diff-filter=AM --stat=120
 
 	stage = add -A
 	unstage = reset HEAD --
@@ -37,20 +41,24 @@
 	ta = for-each-ref --sort=taggerdate refs/tags --format '%(refname)     %(subject)'
 	d1 = diff HEAD~
 	dn1 = diff --stat HEAD~
-
-[push]
-	default = simple
-
 [merge]
 	ff = false
-
 [branch]
         autosetuprebase = always
-
-[pull]
 [difftool "sourcetree"]
-	cmd = /usr/local/bin/ksdiff -- \"$LOCAL\" \"$REMOTE\"
+	cmd = /usr/local/bin/ksdiff -w \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
 	cmd = /usr/local/bin/ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" \"$REMOTE\"
 	trustExitCode = true
+[rebase]
+	autosquash = true
+[pull]
+	ff = only
+	rebase = true
+	prune = true
+[ghq]
+        root = ~/workspace
+        root = ~/.go/src
+[fetch]
+	prune = true

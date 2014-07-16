@@ -1,6 +1,7 @@
 # my aliases
 
 alias ~="cd ~"
+alias ~="cd ~"
 alias ..="cd .."
 
 
@@ -19,16 +20,19 @@ alias firefox="open -a Firefox"
 alias safari="open -a Safari"
 alias chrome="open -a Google\ Chrome"
 alias vi="vim"
+#alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias cot='open $1 -a /Applications/CotEditor.app'
+
 
 alias rm='rmtrash'
 alias cp='cp -i'
 alias mv='mv -i'
 alias diff='colordiff -u'
+alias dw='colordiff -u --strip-trailing-cr'
 alias pwd='pwd -P'
-alias cot='open $1 -a /Applications/CotEditor.app'
 
-# apachectl always require sudo
 alias apachectl='sudo apachectl'
+alias bye='sudo shutdown -h now'
 
 # IP address
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -38,3 +42,18 @@ alias pwgen="pwgen -1"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+
+alias f="find . -type f -print | grep $1"
+alias tree="tree -a"
+
+# git 
+alias tig="tig --all"
+
+# for github utility "hub", from homebrew
+eval "$(hub alias -s)"
+
+# workspace shortcut
+alias ws='cd $(ghq list -p | peco)'
+
+
+alias ajax="curl --header \"X-Requested-With: XMLHttpRequest\""

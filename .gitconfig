@@ -11,14 +11,14 @@
 	quotepath = false
 	editor = vim
 	pager = less -r
-	precomposeunicode = true
+	precomposeunicode = false
 [alias]
 	ad = add -A .
 	co = checkout
 	ci = commit
 	st = status --short --branch
-    br = branch -v -v
-    re = remote -v
+	br = branch -v -v
+	re = remote -v
 	lo = log --decorate --abbrev-commit --date=short --oneline
 	mnff = merge --no-ff
 		
@@ -29,18 +29,22 @@
 	dw = diff -w
 	dword = diff --word-diff
     
-    dn = diff --stat=120
+	dn = diff --stat=120
         dna = diff --stat --diff-filter=A --stat=120
         dnm = diff --stat --diff-filter=M --stat=120
         dnd = diff --stat --diff-filter=D --stat=120
             dnam = diff --stat --diff-filter=AM --stat=120
 
+
+	d1 = diff HEAD~
+	dn1 = diff --stat HEAD~
+	
 	stage = add -A
 	unstage = reset HEAD --
 
 	ta = for-each-ref --sort=taggerdate refs/tags --format '%(refname)     %(subject)'
-	d1 = diff HEAD~
-	dn1 = diff --stat HEAD~
+
+	
 [merge]
 	ff = false
 [branch]

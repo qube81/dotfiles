@@ -16,7 +16,7 @@
 	ad = add -A .
 	co = checkout
 	ci = commit
-	st = status --short --branch
+	st = status --short --branch --untracked-files=all
 	br = branch -v -v
 	re = remote -v
 	lo = log --decorate --abbrev-commit --date=short --oneline

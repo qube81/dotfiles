@@ -11,7 +11,7 @@
 	quotepath = false
 	editor = vim
 	pager = less -r
-	precomposeunicode = false
+	precomposeunicode = true
 [alias]
 	ad = add -A .
 	co = checkout

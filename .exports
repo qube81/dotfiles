@@ -9,7 +9,7 @@ export LESSCHARSET=utf-8
 
 
 export LESS='-R'
-#export LESSOPEN='| /usr/local/Cellar/source-highlight/3.1.7/bin/src-hilite-lesspipe.sh %s'
+export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
 
 export PATH=/usr/local/sbin:$PATH # for Homebrew
 export PATH=/usr/local/bin:$PATH  # for Homebrew

@@ -55,5 +55,5 @@ eval "$(hub alias -s)"
 # workspace shortcut
 alias ws='cd $(ghq list -p | peco)'
 
-
+# ajax request shorthand
 alias ajax="curl --header \"X-Requested-With: XMLHttpRequest\""

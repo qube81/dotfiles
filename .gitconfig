@@ -43,7 +43,7 @@
 	unstage = reset HEAD --
 
 	ta = for-each-ref --sort=taggerdate refs/tags --format '%(refname)     %(subject)'
-
+	nw = browse -- network
 	
 [merge]
 	ff = false

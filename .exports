@@ -15,3 +15,7 @@ export PATH=/usr/local/sbin:$PATH # for Homebrew
 export PATH=/usr/local/bin:$PATH  # for Homebrew
 export PATH=$PATH:$HOME/android-sdk-macosx/platform-tools:$HOME/bin/scripted/bin
 export PATH=$PATH:$HOME/.rbenv/bin
+
+export GOPATH=$HOME/go
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH

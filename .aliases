@@ -20,7 +20,6 @@ alias firefox="open -a Firefox"
 alias safari="open -a Safari"
 alias chrome="open -a Google\ Chrome"
 alias vi="vim"
-#alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias cot='open $1 -a /Applications/CotEditor.app'
 
 
@@ -57,3 +56,7 @@ alias ws='cd $(ghq list -p | peco)'
 
 # ajax request shorthand
 alias ajax="curl --header \"X-Requested-With: XMLHttpRequest\""
+
+# image
+alias imgsize="mdls -name kMDItemPixelWidth -name kMDItemPixelHeight"
+alias img='qlmanage -p "$@" >& /dev/null'

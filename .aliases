@@ -54,6 +54,13 @@ eval "$(hub alias -s)"
 # workspace shortcut
 alias ws='cd $(ghq list -p | peco)'
 
+# ssh shortcut
+function peco-ssh() {
+  SSH=$(grep "^\s*Host " ~/.ssh/config | sed s/"[\s ]*Host "// | grep -v "^\*$" | sort | peco)
+  ssh $SSH
+}
+alias ss="peco-ssh"
+
 # ajax request shorthand
 alias ajax="curl --header \"X-Requested-With: XMLHttpRequest\""
 

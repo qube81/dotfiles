@@ -8,6 +8,7 @@
 	ui = auto
 [core]
 	excludesfile = ~/.gitignore
+	attributesfile = ~/.gitattributes
 	quotepath = false
 	editor = vim
 	pager = less -r

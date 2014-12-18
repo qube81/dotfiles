@@ -18,6 +18,7 @@ alias la="ls -a"
 alias ld='ll | grep "^d"'
 
 alias grep="grep --color=auto"
+alias sed="gsed"
 
 alias firefox="open -a Firefox"
 alias safari="open -a Safari"

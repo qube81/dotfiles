@@ -17,7 +17,7 @@ set shiftwidth=4
 set expandtab
 set backupskip=/tmp/*,/private/tmp/*
 
-colorscheme wombat
+colorscheme elflord
 
 set ignorecase
 set smartcase

@@ -3,7 +3,7 @@
 
 [user]
 	name = qube81
-	email = qube81+github@gmail.com
+	email = yuta.tkhs@gmail.com
 [color]
 	ui = auto
 [core]
@@ -67,3 +67,7 @@
         root = ~/.go/src
 [fetch]
 	prune = true
+[filter "media"]
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true

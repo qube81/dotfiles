@@ -16,7 +16,7 @@ set showcmd
 set shiftwidth=4
 set expandtab
 set backupskip=/tmp/*,/private/tmp/*
-
+set backspace=indent,eol,start
 colorscheme elflord
 
 set ignorecase

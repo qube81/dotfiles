@@ -114,11 +114,11 @@ eval "$(rbenv init -)"
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host"   ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
 
 # git autocomplete
-if [ -f $(brew --prefix)/etc/bash_completion.d/git-completion.bash ]; then
-    source $(brew --prefix)/etc/bash_completion.d/git-completion.bash
-fi
 if [ -f $(brew --prefix)/etc/bash_completion.d/git-prompt.sh ]; then
     source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
+fi
+if [ -f $(brew --prefix)/etc/bash_completion.d/git-completion.bash ]; then
+    source $(brew --prefix)/etc/bash_completion.d/git-completion.bash
 fi
 
 # brew install bash-completion

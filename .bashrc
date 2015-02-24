@@ -24,7 +24,6 @@ alias firefox="open -a Firefox"
 alias safari="open -a Safari"
 alias chrome="open -a Google\ Chrome"
 alias vi="vim"
-alias cot='open $1 -a /Applications/CotEditor.app'
 
 alias rm='rmtrash'
 alias cp='cp -i'

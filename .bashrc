@@ -64,11 +64,11 @@ alias ws='cd $(ghq list -p | peco)'
 alias cdv='cd $(vagrant global-status | egrep "^[a-z0-9]{7}" | tr -s " " | cut -f 5 -d" " | peco)'
 
 #SSH shoutcut
-function peco-ssh() {
+function ssh-peco() {
 	SSH=$(grep "^\s*Host " ~/.ssh/config | sed s/"[\s ]*Host "// | grep -v "^\*$" | sort | peco)
 	ssh $SSH
 }
-alias ss="peco-ssh"
+alias ssp="ssh-peco"
 
 alias ajax="curl --header \"X-Requested-With: XMLHttpRequest\""
 

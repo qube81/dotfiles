@@ -106,6 +106,9 @@ export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+# composer
+export PATH="~/.composer/vendor/bin:$PATH"
+
 # rbenv
 eval "$(rbenv init -)"
 

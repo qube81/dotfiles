@@ -72,7 +72,7 @@ alias ssp="ssh-peco"
 
 alias ajax="curl --header \"X-Requested-With: XMLHttpRequest\""
 
-alias brew!="brew update && brew upgrade && brew cleanup"
+alias brew!="brew update && brew upgrade --all && brew cleanup"
 
 alias imgsize="mdls -name kMDItemPixelWidth -name kMDItemPixelHeight"
 alias img='qlmanage -p "$@" >& /dev/null'

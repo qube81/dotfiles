@@ -3,6 +3,35 @@
   gather_facts: no
   sudo: no
 
+  vars:
+    homebrew_packages:
+      - { name: tree, state: latest }
+    
+    
   tasks:
-    - name: hello localhost
-      command: /bin/echo Hello localhost!
+    - name: brew update & brew upgrade --all
+      homebrew: update_homebrew=yes upgrade_all=yes
+    
+    - name: brew パッケージをインストール
+      homebrew: >
+        name={{ item.name }}
+        state={{ item.state | default('latest') }}
+        install_options={{
+          item.install_options | default() | join(',')
+          if item.install_options is not string
+          else item.install_options
+        }}
+      with_items: homebrew_packages
+      register: brew_result
+      
+    - name: brew パッケージの情報保存先ディレクトリを作成
+      file: path=brew_info state=directory
+    
+    - name: brew パッケージの情報を保存
+      shell: brew info {{ item }} > brew_info/{{ item }}
+      with_items: brew_result.results | selectattr('changed') | map(attribute='item') | map(attribute='name') | list
+          
+    - name: brew cleanup
+      shell: /usr/local/bin/brew cleanup
+      register: creanup_result
+      changed_when: no

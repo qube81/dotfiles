@@ -72,7 +72,7 @@ alias ssp="ssh-peco"
 
 alias ajax="curl --header \"X-Requested-With: XMLHttpRequest\""
 
-alias brew!="brew update && brew upgrade --all && brew cleanup"
+alias brew!="ansible-playbook -i ~/.ansible-macbook-provision/hosts -vv ~/.ansible-macbook-provision/localhost.yml"
 
 alias imgsize="mdls -name kMDItemPixelWidth -name kMDItemPixelHeight"
 alias img='qlmanage -p "$@" >& /dev/null'

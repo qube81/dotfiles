@@ -6,8 +6,7 @@
   vars:
     homebrew_packages:
       - { name: tree, state: latest }
-    
-    
+ 
   tasks:
     - name: brew update & brew upgrade --all
       homebrew: update_homebrew=yes upgrade_all=yes
@@ -25,10 +24,10 @@
       register: brew_result
       
     - name: brew パッケージの情報保存先ディレクトリを作成
-      file: path=brew_info state=directory
+      file: path=log/homebrew state=directory
     
     - name: brew パッケージの情報を保存
-      shell: brew info {{ item }} > brew_info/{{ item }}
+      shell: brew info {{ item }} > log/homebrew/{{ item }}
       with_items: brew_result.results | selectattr('changed') | map(attribute='item') | map(attribute='name') | list
           
     - name: brew cleanup

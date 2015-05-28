@@ -31,6 +31,6 @@
       with_items: brew_result.results | selectattr('changed') | map(attribute='item') | map(attribute='name') | list
           
     - name: brew cleanup
-      shell: /usr/local/bin/brew cleanup
+      shell: $(brew --prefix)/bin/brew cleanup
       register: creanup_result
       changed_when: no

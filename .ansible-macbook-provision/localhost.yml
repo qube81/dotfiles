@@ -3,15 +3,77 @@
   gather_facts: no
   sudo: no
 
+  # e.g.
+  # - package_name
+  # or
+  # { name: package_name, state: package_state, install_options: [with-baz, enable-debug] }
+  #
+  # state choices: [head, latest, present, absent, linked, unlinked] (default latest)
+  # install_options: string or sequence (default none)
   vars:
+    homebrew_taps:
+      - caskroom/cask
+      - homebrew/php
+      - homebrew/apache
+      - homebrew/completions
     homebrew_packages:
-      - { name: tree, state: latest }
+      - { name: readline }
+      - { name: openssl, state: linked, install_options: force }
+      
+      - { name: python }
+      - { name: ansible }
+      
+      - { name: git }
+      - { name: hub }
+      - { name: tig }
+      
+      - { name: wget }
+      - { name: curl }
+      - { name: tree }
+      - { name: jq }
+      
+      - { name: go }
+      - { name: peco }
+      - { name: ghq }
+      
+      - { name: mysql }
+      - { name: sqlite }
+      
+      - { name: bash-completion }
+      - { name: vagrant-completion }
+      - { name: source-highlight}
+      - { name: colordiff }
+      
+      - { name: httpd24 }
+      
+      - { name: node }
+      
+      - { name: php56 }
+      - { name: php56-mcrypt }
+      - { name: php56-intl }
+      - { name: php56-opcache }
+      - { name: php56-xdebug }
+      - { name: php-cs-fixer }
+      - { name: phpmd }
+      - { name: composer }
+      
+      - { name: rbenv }
+      - { name: ruby-build }
+      
+      - { name: vim }
+      - { name: zsh }
  
   tasks:
-    - name: brew update & brew upgrade --all
-      homebrew: update_homebrew=yes upgrade_all=yes
     
-    - name: brew パッケージをインストール
+    - name: homebrew tap
+      homebrew_tap: tap={{ item }} state=present
+      with_items: homebrew_taps
+    
+    - name: brew update
+      homebrew: update_homebrew=yes
+      ignore_errors: on
+    
+    - name: brew package install
       homebrew: >
         name={{ item.name }}
         state={{ item.state | default('latest') }}
@@ -21,15 +83,8 @@
           else item.install_options
         }}
       with_items: homebrew_packages
-      register: brew_result
+      ignore_errors: on
       
-    - name: brew パッケージの情報保存先ディレクトリを作成
-      file: path=log/homebrew state=directory
-    
-    - name: brew パッケージの情報を保存
-      shell: brew info {{ item }} > log/homebrew/{{ item }}
-      with_items: brew_result.results | selectattr('changed') | map(attribute='item') | map(attribute='name') | list
-          
     - name: brew cleanup
       shell: $(brew --prefix)/bin/brew cleanup
       register: creanup_result

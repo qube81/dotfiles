@@ -31,6 +31,7 @@
       - { name: curl }
       - { name: tree }
       - { name: jq }
+      - { name: rmtrash }
       
       - { name: go }
       - { name: peco }
@@ -59,7 +60,8 @@
       
       - { name: rbenv }
       - { name: ruby-build }
-      
+     
+      - { name: bash }
       - { name: vim }
       - { name: zsh }
  

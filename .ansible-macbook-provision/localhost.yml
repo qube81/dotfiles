@@ -18,7 +18,8 @@
       - homebrew/completions
     homebrew_packages:
       - { name: readline }
-      - { name: openssl, state: linked, install_options: force }
+      - { name: openssl }
+      - { name: openssl, state: linked, install_options: force } # fix openssl upgrade probrem
       
       - { name: python }
       - { name: ansible }

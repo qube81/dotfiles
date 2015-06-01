@@ -11,7 +11,7 @@ alias ..="cd .."
 
 alias e="echo"
 
-alias ll="ls -lhp"
+alias ll="ls -lhpa"
 alias la="ls -a"
 
 # List only directories

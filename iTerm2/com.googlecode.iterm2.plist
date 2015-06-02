@@ -1640,7 +1640,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/ytkhs/ghq/github.com/qube81/dotfiles/iTerm2</string>
+	<string>~/ghq/github.com/qube81/dotfiles/iTerm2</string>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>QuitWhenAllWindowsClosed</key>

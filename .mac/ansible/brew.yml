@@ -16,13 +16,14 @@
       - homebrew/php
       - homebrew/apache
       - homebrew/completions
+      
     homebrew_packages:
+      - { name: python }
+      - { name: ansible }	
+      
       - { name: readline }
       - { name: openssl }
       - { name: openssl, state: linked, install_options: force } # fix openssl upgrade probrem
-      
-      - { name: python }
-      - { name: ansible }
       
       - { name: git }
       - { name: hub }
@@ -31,8 +32,13 @@
       - { name: wget }
       - { name: curl }
       - { name: tree }
+      - { name: less }
+      - { name: gnu-sed }
+      - { name: pwgen }
       - { name: jq }
       - { name: rmtrash }
+      - { name: source-highlight}
+      - { name: colordiff }
       
       - { name: go }
       - { name: peco }
@@ -43,8 +49,6 @@
       
       - { name: bash-completion }
       - { name: vagrant-completion }
-      - { name: source-highlight}
-      - { name: colordiff }
       
       - { name: httpd24 }
       

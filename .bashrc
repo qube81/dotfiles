@@ -10,6 +10,7 @@ alias ~="cd ~"
 alias ..="cd .."
 
 alias e="echo"
+alias o="open ."
 
 alias ll="ls -lhpa"
 alias la="ls -a"
@@ -72,7 +73,7 @@ alias ssp="ssh-peco"
 
 alias ajax="curl --header \"X-Requested-With: XMLHttpRequest\""
 
-alias brew!="ansible-playbook -i ~/.ansible-macbook-provision/hosts -vv ~/.ansible-macbook-provision/localhost.yml"
+alias brew!="ansible-playbook -i ~/.mac/ansible/hosts -vv ~/.mac/ansible/brew.yml"
 
 alias imgsize="mdls -name kMDItemPixelWidth -name kMDItemPixelHeight"
 alias img='qlmanage -p "$@" >& /dev/null'
@@ -95,7 +96,6 @@ export LESS='-R'
 export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
 
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH # for Homebrew
-export PATH=$PATH:$HOME/android-sdk-macosx/platform-tools:$HOME/bin/scripted/bin
 export PATH=$PATH:$HOME/.rbenv/bin
 
 export GOPATH=$HOME/go

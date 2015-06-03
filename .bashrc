@@ -115,19 +115,7 @@ eval "$(rbenv init -)"
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host"   ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
 
-# git autocomplete
-if [ -f $(brew --prefix)/etc/bash_completion.d/git-prompt.sh ]; then
-    source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
-fi
-if [ -f $(brew --prefix)/etc/bash_completion.d/git-completion.bash ]; then
-    source $(brew --prefix)/etc/bash_completion.d/git-completion.bash
-fi
-
 # brew install bash-completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 	. $(brew --prefix)/etc/bash_completion
-fi
-
-if [ -f $(brew --prefix)/etc/bash_completion.d/vagrant ]; then
-    source $(brew --prefix)/etc/bash_completion.d/vagrant
 fi

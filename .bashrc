@@ -11,6 +11,7 @@ alias ..="cd .."
 
 alias e="echo"
 alias o="open ."
+alias d="cd ~/Desktop"
 
 alias ll="ls -lhpa"
 alias la="ls -a"

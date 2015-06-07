@@ -58,19 +58,23 @@ alias tig="tig --all"
 # for github utility "hub", from homebrew
 eval "$(hub alias -s)"
 
-# workspace shortcut
-function p() {
-	peco --query="$@"| while read LINE; do $@ $LINE; done
-}
-alias ws='cd $(ghq list -p | peco)'
+# workspace short
+alias ws='ghq look $(ghq list | peco)'
 alias cdv='cd $(vagrant global-status | egrep "^[a-z0-9]{7}" | tr -s " " | cut -f 5 -d" " | peco)'
 
+function ghqco() {
+	ghs $@ | peco | awk '{print $1}' | ghq import
+}
+
+function ghqrm () {
+  ghq list --full-path | peco | xargs rm -r
+}
+
 #SSH shoutcut
-function ssh-peco() {
+function ssp() {
 	SSH=$(grep "^\s*Host " ~/.ssh/config | sed s/"[\s ]*Host "// | grep -v "^\*$" | sort | peco)
 	ssh $SSH
 }
-alias ssp="ssh-peco"
 
 alias ajax="curl --header \"X-Requested-With: XMLHttpRequest\""
 

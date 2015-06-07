@@ -134,13 +134,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>660 258 578 82 0 0 1280 777 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>459 283 924 485 0 0 1280 777 </string>
+	<string>356 283 924 485 0 0 1280 777 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>450 486 384 129 0 0 1280 777 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>1434 999 592 584 1280 526 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>42 42 850 713 0 0 1280 777 </string>
+	<string>11 29 850 748 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -862,7 +862,7 @@
 			<key>Vertical Spacing</key>
 			<real>1.2000000476837158</real>
 			<key>Visual Bell</key>
-			<true/>
+			<false/>
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
@@ -1587,7 +1587,7 @@
 			<key>Vertical Spacing</key>
 			<real>1.2000000476837158</real>
 			<key>Visual Bell</key>
-			<true/>
+			<false/>
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>

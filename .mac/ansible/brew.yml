@@ -16,6 +16,9 @@
       - homebrew/php
       - homebrew/apache
       - homebrew/completions
+
+      - motemen/ghq
+      - sona-tar/tools
       
     homebrew_packages:
       - { name: python }
@@ -32,7 +35,6 @@
       - { name: wget }
       - { name: curl }
       - { name: tree }
-      - { name: less }
       - { name: gnu-sed }
       - { name: pwgen }
       - { name: jq }
@@ -43,6 +45,7 @@
       - { name: go }
       - { name: peco }
       - { name: ghq }
+      - { name: ghs }
       
       - { name: mysql }
       - { name: sqlite }

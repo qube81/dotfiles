@@ -59,7 +59,7 @@ alias tig="tig --all"
 eval "$(hub alias -s)"
 
 # workspace short
-alias ws='ghq look $(ghq list | peco)'
+alias ws='cd $(ghq list -p | peco)'
 alias cdv='cd $(vagrant global-status | egrep "^[a-z0-9]{7}" | tr -s " " | cut -f 5 -d" " | peco)'
 
 function ghqco() {

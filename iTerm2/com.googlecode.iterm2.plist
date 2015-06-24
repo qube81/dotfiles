@@ -83,38 +83,23 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSColorPanelMode</key>
-	<string>1</string>
+	<string>3</string>
+	<key>NSColorPickerPageableNameListDefaults</key>
+	<string>1Web Safe Colors</string>
 	<key>NSColorPickerSlidersDefaults</key>
-	<string>1</string>
+	<string>3</string>
 	<key>NSFontPanelAttributes</key>
-	<string>1, 9</string>
+	<string>1, 10</string>
+	<key>NSFontPanelPreviewHeight</key>
+	<real>0.0</real>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/ghq/github.com/qube81/dotfiles/iTerm2</string>
-	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
 	<string></string>
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
-	<key>NSTableView Columns KeyBingingTable</key>
-	<array>
-		<data>
-		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
-		hAErATCG
-		</data>
-		<string>198</string>
-		<data>
-		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
-		hAErATGG
-		</data>
-		<string>302</string>
-	</array>
-	<key>NSTableView Hidden Columns KeyBingingTable</key>
-	<array/>
-	<key>NSTableView Sort Ordering KeyBingingTable</key>
-	<array/>
 	<key>NSToolbar Configuration Terminal Toolbar</key>
 	<dict>
 		<key>TB Display Mode</key>
@@ -126,21 +111,16 @@
 		<key>TB Size Mode</key>
 		<integer>1</integer>
 	</dict>
-	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
-	<dict>
-		<key>TB Is Shown</key>
-		<integer>1</integer>
-	</dict>
+	<key>NSWindow Frame NSColorPanel</key>
+	<string>911 541 201 309 0 0 1920 1178 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>660 258 578 82 0 0 1280 777 </string>
+	<string>931 421 618 288 0 0 1920 1178 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>356 283 924 485 0 0 1280 777 </string>
+	<string>288 -560 605 485 230 -800 1280 778 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>450 486 384 129 0 0 1280 777 </string>
-	<key>NSWindow Frame UKCrashReporter</key>
-	<string>1434 999 592 584 1280 526 1920 1057 </string>
+	<string>1223 834 384 129 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>11 29 850 748 0 0 1280 777 </string>
+	<string>210 17 865 748 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -162,11 +142,11 @@
 			<key>Ansi 1 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.40191030502319336</real>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.37153637409210205</real>
 				<key>Red Component</key>
-				<real>0.73333334922790527</real>
+				<real>0.98854941129684448</real>
 			</dict>
 			<key>Ansi 10 Color</key>
 			<dict>
@@ -1594,6 +1574,12 @@
 			<string></string>
 		</dict>
 	</array>
+	<key>NoSyncNeverRemindPrefsChangesLost</key>
+	<true/>
+	<key>NoSyncTimeOfLastPromo</key>
+	<real>453193102.82410699</real>
+	<key>NoSyncTimeOfLastPromoDownload</key>
+	<real>456719734.52773899</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1640,7 +1626,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>~/ghq/github.com/qube81/dotfiles/iTerm2</string>
+	<string>/Users/ytakahashi/ghq/github.com/qube81/dotfiles/iTerm2</string>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -1652,13 +1638,13 @@
 	<key>SUAutomaticallyUpdate</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
-	<false/>
+	<true/>
 	<key>SUFeedURL</key>
 	<string>http://iterm2.com/appcasts/testing.xml</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-05-16T04:30:54Z</date>
+	<date>2015-06-23T02:34:43Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -1683,8 +1669,6 @@
 	<integer>10</integer>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
-	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1419669888</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
@@ -1704,6 +1688,6 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>2.1</string>
+	<string>2.1.1</string>
 </dict>
 </plist>

@@ -30,6 +30,7 @@
       - { name: git }
       - { name: hub }
       - { name: tig }
+      - { name: git-flow }
       
       - { name: wget }
       - { name: curl }

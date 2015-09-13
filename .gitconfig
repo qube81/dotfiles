@@ -46,8 +46,6 @@
 	ta = for-each-ref --sort=taggerdate refs/tags --format '%(refname)     %(subject)'
 	nw = browse -- network
 
-[merge]
-	ff = false
 [branch]
         autosetuprebase = always
 [difftool "sourcetree"]
@@ -60,7 +58,6 @@
 	autosquash = true
 [pull]
 	ff = only
-	rebase = true
 	prune = true
 [ghq]
         root = ~/ghq

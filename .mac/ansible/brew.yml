@@ -30,13 +30,16 @@
       - { name: git }
       - { name: hub }
       - { name: tig }
+      - { name: git-flow }
       
       - { name: wget }
       - { name: curl }
+      - { name: httpie }
       - { name: tree }
       - { name: gnu-sed }
       - { name: pwgen }
       - { name: jq }
+      - { name: jsonpp }
       - { name: rmtrash }
       - { name: source-highlight}
       - { name: colordiff }

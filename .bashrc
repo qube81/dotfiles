@@ -27,7 +27,8 @@ alias safari="open -a Safari"
 alias chrome="open -a Google\ Chrome"
 alias vi="vim"
 
-alias rm='rmtrash'
+alias rm='rm -i'
+alias rmt='rmtrash'
 alias cp='cp -i'
 alias mv='mv -i'
 alias diff='colordiff -u'

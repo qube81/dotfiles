@@ -93,7 +93,7 @@ GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWUPSTREAM=1
 GIT_PS1_SHOWUNTRACKEDFILES=1
 GIT_PS1_SHOWSTASHSTATE=1
-export PS1='\[\e[1;36m\][ \t \W$(__git_ps1)]\[\e[00m\] \$ '
+export PS1='\[\e[1;36m\][ \t \W$(__git_ps1)]\[\e[00m\]\n\$ '
 
 export LANG=ja_JP.UTF-8
 export LESSCHARSET=utf-8

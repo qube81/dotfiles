@@ -16,8 +16,6 @@
       - homebrew/php
       - homebrew/apache
       - homebrew/completions
-
-      - sona-tar/tools
       
     homebrew_packages:
       - { name: python }
@@ -34,12 +32,11 @@
       
       - { name: wget }
       - { name: curl }
-      - { name: httpie }
       - { name: tree }
       - { name: gnu-sed }
       - { name: pwgen }
       - { name: jq }
-      - { name: jsonpp }
+      - { name: ccat }
       - { name: rmtrash }
       - { name: source-highlight}
       - { name: colordiff }
@@ -47,10 +44,8 @@
       - { name: go }
       - { name: peco }
       - { name: ghq }
-      - { name: ghs }
       
       - { name: mysql }
-      - { name: sqlite }
       
       - { name: bash-completion }
       - { name: vagrant-completion }
@@ -64,6 +59,11 @@
       - { name: php56-intl }
       - { name: php56-opcache }
       - { name: php56-xdebug }
+      - { name: php70 }
+      - { name: php70-intl }
+      - { name: php70-mcrypt }
+      - { name: php70-opcache }
+      - { name: php70-xdebug }
       - { name: php-cs-fixer }
       - { name: phpmd }
       - { name: composer }

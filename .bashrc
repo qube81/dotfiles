@@ -54,7 +54,7 @@ alias f="find . -type f -print | grep $1"
 alias tree="tree -a"
 
 # git
-alias tig="tig --all"
+# alias tig="tig --all"
 
 # for github utility "hub", from homebrew
 eval "$(hub alias -s)"

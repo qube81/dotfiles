@@ -1,7 +1,7 @@
 - hosts: localhost
   connection: local
   gather_facts: no
-  sudo: no
+  become_user: no
 
   # e.g.
   # - package_name

@@ -3,6 +3,13 @@
   gather_facts: no
   become_user: no
 
+  # before this task
+  #   $ brew install pyenv-virtualenv
+  #   $ pyenv install 3.5.0
+  #   $ pyenv virtualenv 3.5.0 ansible2
+  #   $ pyenv global ansible2
+  #   $ pip install ansible
+
   # e.g.
   # - package_name
   # or
@@ -18,8 +25,7 @@
       - homebrew/completions
       
     homebrew_packages:
-      - { name: python }
-      - { name: ansible }	
+      - { name: pyenv-virtualenv }
       
       - { name: readline }
       - { name: openssl }

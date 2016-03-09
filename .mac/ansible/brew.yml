@@ -60,11 +60,6 @@
       
       - { name: node }
       
-      - { name: php56 }
-      - { name: php56-mcrypt }
-      - { name: php56-intl }
-      - { name: php56-opcache }
-      - { name: php56-xdebug }
       - { name: php70 }
       - { name: php70-intl }
       - { name: php70-mcrypt }

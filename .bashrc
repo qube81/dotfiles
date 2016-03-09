@@ -42,7 +42,7 @@ alias h="history"
 alias x="exit"
 
 # IP address
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias ipa="dig +short myip.opendns.com @resolver1.opendns.com"
 
 # generate password (installed via homebrew)
 alias pwgen="pwgen -1"
@@ -52,6 +52,8 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
 alias f="find . -type f -print | grep $1"
 alias tree="tree -a"
+
+alias slog="script -a ~/Desktop/log-`date +%Y%m%d%H%M%S`.txt"
 
 # git
 # alias tig="tig --all"

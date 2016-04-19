@@ -31,7 +31,7 @@ alias rm='rm -i'
 alias rmt='rmtrash'
 alias cp='cp -i'
 alias mv='mv -i'
-alias diff='colordiff -u'
+alias cdiff='colordiff -u'
 alias dw='colordiff -u --strip-trailing-cr'
 alias pwd='pwd -P'
 

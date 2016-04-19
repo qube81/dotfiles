@@ -12,9 +12,6 @@
 *.pydevproject
 .project
 .metadata
-bin/**
-tmp/**
-tmp/**/*
 *.tmp
 *.bak
 *.swp
@@ -47,10 +44,6 @@ local.properties
 
 # Java class files
 *.class
-
-# generated files
-bin/
-gen/
 
 # Local configuration file (sdk path, etc)
 local.properties

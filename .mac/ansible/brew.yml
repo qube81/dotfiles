@@ -80,7 +80,7 @@
     
     - name: homebrew tap
       homebrew_tap: tap={{ item }} state=present
-      with_items: homebrew_taps
+      with_items: "{{homebrew_taps}}"
     
     - name: brew update
       homebrew: update_homebrew=yes
@@ -95,7 +95,7 @@
           if item.install_options is not string
           else item.install_options
         }}
-      with_items: homebrew_packages
+      with_items: "{{homebrew_packages}}"
       ignore_errors: on
       
     - name: brew cleanup

@@ -43,7 +43,6 @@
       - { name: pwgen }
       - { name: jq }
       - { name: ccat }
-      - { name: rmtrash }
       - { name: source-highlight}
       - { name: colordiff }
       
@@ -60,11 +59,7 @@
       
       - { name: node }
       
-      - { name: php70 }
-      - { name: php70-intl }
-      - { name: php70-mcrypt }
-      - { name: php70-opcache }
-      - { name: php70-xdebug }
+      - { name: php71 }
       - { name: php-cs-fixer }
       - { name: phpmd }
       - { name: composer }

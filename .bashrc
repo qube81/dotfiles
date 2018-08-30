@@ -22,16 +22,15 @@ alias ld='ll | grep "^d"'
 alias grep="grep --color=auto"
 alias sed="gsed"
 
-alias firefox="open -a Firefox"
-alias safari="open -a Safari"
-alias chrome="open -a Google\ Chrome"
 alias vi="vim"
 
 alias rm='rm -i'
 alias rmt='rmtrash'
 alias cp='cp -i'
 alias mv='mv -i'
+
 alias cdiff='colordiff -u'
+
 alias dw='colordiff -u --strip-trailing-cr'
 alias pwd='pwd -P'
 
@@ -40,6 +39,7 @@ alias apachectl='sudo apachectl'
 alias bye='sudo shutdown -h now'
 alias h="history"
 alias x="exit"
+alias tree="tree -N"
 
 # IP address
 alias ipa="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -81,7 +81,8 @@ function ssp() {
 
 alias ajax="curl --header \"X-Requested-With: XMLHttpRequest\""
 
-alias brew!="ansible-playbook -i ~/.mac/ansible/hosts -vv ~/.mac/ansible/brew.yml"
+#alias brew!="ansible-playbook -i ~/.mac/ansible/hosts -vv ~/.mac/ansible/brew.yml"
+alias brew!="brew update && brew upgrade && brew cleanup"
 
 alias imgsize="mdls -name kMDItemPixelWidth -name kMDItemPixelHeight"
 alias img='qlmanage -p "$@" >& /dev/null'
@@ -112,6 +113,7 @@ export GOROOT=/usr/local/opt/go/libexec
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
 export PATH=$HOME/bin:$PATH
+export HISTCONTROL=ignoreboth
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -121,7 +123,6 @@ export PATH="~/.composer/vendor/bin:$PATH"
 
 # *.env
 eval "$(rbenv init -)"
-eval "$(pyenv init -)"
 
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host"   ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
@@ -130,3 +131,6 @@ eval "$(pyenv init -)"
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 	. $(brew --prefix)/etc/bash_completion
 fi
+
+export NVM_DIR="/Users/yutatakahashi/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

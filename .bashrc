@@ -39,7 +39,7 @@ alias apachectl='sudo apachectl'
 alias bye='sudo shutdown -h now'
 alias h="history"
 alias x="exit"
-alias tree="tree -N"
+alias tree="tree -Na"
 
 # IP address
 alias ipa="dig +short myip.opendns.com @resolver1.opendns.com"

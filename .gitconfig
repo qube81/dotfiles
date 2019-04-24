@@ -59,8 +59,8 @@
 [ghq]
         root = ~/ghq
         root = ~/go/src
-        root = ~/Volumes/web/data/vhosts
-        root = ~/Volumes/web-1/data/vhosts
+        root = /Volumes/web/data/vhosts
+        root = /Volumes/web-1/data/vhosts
 [fetch]
 	prune = true
 [filter "media"]

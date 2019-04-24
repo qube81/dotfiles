@@ -20,7 +20,7 @@
 	st = status --short --branch --untracked-files=all
 	br = branch -v -v
 	re = remote -v
-	lo = log --decorate --abbrev-commit --date=short --oneline
+	lo = log --pretty='format:%C(yellow)%h %C(green)%cd %C(red)%d %C(reset)%s  %C(cyan)[%an]' --date=format:'%Y/%m/%d %H:%M:%S'
 	mnff = merge --no-ff
 
 	hist = log --oneline --decorate --graph --branches --tags

@@ -8,7 +8,7 @@
 	attributesfile = ~/.gitattributes
 	quotepath = false
 	editor = vim
-	pager = less -r
+	pager = less -FRX
 	precomposeunicode = true
 [alias]
 	ad = add -A .
@@ -57,10 +57,10 @@
 	ff = only
 	prune = true
 [ghq]
-        root = ~/ghq
-        root = ~/go/src
-        root = /Volumes/web/data/vhosts
-        root = /Volumes/web-1/data/vhosts
+    root = ~/ghq
+    root = ~/go/src
+    root = /Volumes/web/data/vhosts
+    root = /Volumes/web-1/data/vhosts
 [fetch]
 	prune = true
 [filter "media"]

@@ -1,9 +1,6 @@
 [include]
 	path = .gitconfig.local
 
-[user]
-	name = ytkhs
-	email = yuta.tkhs@gmail.com
 [color]
 	ui = auto
 [core]

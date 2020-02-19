@@ -90,7 +90,6 @@ alias img='qlmanage -p "$@" >& /dev/null'
 #exports
 export CLICOLOR=1
 export LSCOLORS=DxGxcxdxCxegedabagacad
-#export PS1='[\t \u@\h \W$(__git_ps1)]\$ '
 
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWUPSTREAM=1
@@ -101,7 +100,7 @@ export PS1='\[\e[1;36m\][ \t \W$(__git_ps1)]\[\e[00m\]\n\$ '
 export LANG=ja_JP.UTF-8
 export LESSCHARSET=utf-8
 
-export LESS='-R'
+export LESS='-gj10 --no-init --quit-if-one-screen --RAW-CONTROL-CHARS'
 export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
 
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH # for Homebrew

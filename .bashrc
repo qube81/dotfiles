@@ -99,9 +99,9 @@ export PS1='\[\e[1;36m\][ \t \W$(__git_ps1)]\[\e[00m\]\n\$ '
 
 export LANG=ja_JP.UTF-8
 export LESSCHARSET=utf-8
-
-export LESS='-gj10 --no-init --quit-if-one-screen --RAW-CONTROL-CHARS'
+export LESS='-gj10 --no-init --quit-if-one-screen --RAW-CONTROL-CHARS --LONG-PROMPT'
 export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
+export PAGER=less
 
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH # for Homebrew
 export PATH=$PATH:$HOME/.rbenv/bin

@@ -10,7 +10,7 @@
 	editor = vim
 	pager = less -FRX
 	precomposeunicode = true
-	ignoreStat = true
+
 [alias]
 	ad = add -A .
 	co = checkout
